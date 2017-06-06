@@ -537,12 +537,12 @@ var zero_pad = function(n,N) {
 
 var console_log = function(s) {
     if(Config.debug) {
-        console_log(s);
+        console.log(s); // sometimes we need some help to see the magic. luckily i got Developer Tools :D
     }
 };
 
 var Config = {
-    debug:false,
+    debug:true, // ticket to see what's happened
     num_floors:30,
     num_elevators:4,
     elevator_height_m:2,
@@ -576,7 +576,7 @@ simulator.start(function() {
     if(!$('#stats').get() || $('#stats').get().length == 0) {
         $('#view').append($('<pre>').attr({id:'stats'}).css({float:'left'}));
     }
-    $('#stats').text(JSON.stringify(simulator.get_stats(),null,'  '));
+    $('#stats').text('Elevator Speed: ' + JSON.stringify(simulator.get_stats(),null,'  '));
 });
 </script>
 </body>

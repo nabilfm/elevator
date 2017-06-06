@@ -41,6 +41,8 @@
  * building.get_num_floors()
  */
 
+Config.elevator_speed_m_per_s = 2; // inject the speed so our elevator's improved ;)
+
 Elevator.prototype.decide = function() {
     var simulator = Simulator.get_instance();
     var building = simulator.get_building();
