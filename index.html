@@ -576,7 +576,7 @@ simulator.start(function() {
     if(!$('#stats').get() || $('#stats').get().length == 0) {
         $('#view').append($('<pre>').attr({id:'stats'}).css({float:'left'}));
     }
-    $('#stats').text('Elevator Speed: ' + JSON.stringify(simulator.get_stats(),null,'  '));
+    $('#stats').text('Elevator Speed: ' + Config.elevator_speed_m_per_s + '\n'+ JSON.stringify(simulator.get_stats(),null,'  '));
 });
 </script>
 </body>
