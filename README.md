@@ -8,6 +8,6 @@ Try to:
 3. minimize total_elevator_traveled_distance  
 4. maximize total_delivered_people  
 
-==========================================================================================================================================
+=================================================================================
 
-Done. Fell free to check the result.PNG :)
+Done. Feel free to check the result.PNG :)
